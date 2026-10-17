@@ -142,7 +142,7 @@ img {
 .main-nav {
   display: flex;
   align-items: center;
-  gap: clamp(18px, 3vw, 42px);
+  gap: clamp(18px, 3vw, 20px);
 }
 
 .main-nav > a {

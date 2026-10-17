@@ -67,6 +67,9 @@ function Header() {
         <a className="nav-cta" href="#contact">
           Let&apos;s talk <ArrowIcon />
         </a>
+        <a className="nav-cta" href="https://dashish498.github.io/portfolio/">
+          Portfolio V1
+        </a>
       </nav>
     </header>
   );
