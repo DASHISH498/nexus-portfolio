@@ -1,0 +1,78 @@
+
+.scroll-trace-background {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-trace-art {
+  width: min(80vw, 900px);
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-trace-art svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.scroll-trace-art svg path,
+.scroll-trace-art svg line,
+.scroll-trace-art svg polyline,
+.scroll-trace-art svg polygon,
+.scroll-trace-art svg circle,
+.scroll-trace-art svg ellipse,
+.scroll-trace-art svg rect {
+  fill: none !important;
+  stroke: #d6ad60 !important;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.scroll-trace-shade {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 10, 10, 0.12);
+}
+
+.site-header,
+main {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .scroll-trace-art {
+    width: 95vw;
+    height: 75vh;
+  }
+}
+
+.scroll-trace-background,
+.scroll-trace-art {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.scroll-trace-art svg {
+  border: none !important;
+  outline: none !important;
+  background: transparent !important;
+}
+
+.scroll-trace-art svg rect {
+  fill: none !important;
+  stroke: none !important;
+}
